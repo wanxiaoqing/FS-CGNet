@@ -19,7 +19,7 @@ from utils import get_cls_map
 import time
 from torch.optim.lr_scheduler import CosineAnnealingLR
 
-from DBCTNet import FSCGNet
+from main import FSCGNet
 
 CLASS_IP = ['Alfalfa', 'Corn-notill', 'Corn-mintill', 'Corn', 'Grass-pasture', 'Grass-trees',
             'Grass-pasture-mowed', 'Hay-windrowed', 'Oats', 'Soybean-notill', 'Soybean-mintill',
@@ -761,3 +761,4 @@ if __name__ == "__main__":
                     # 打印结果
                     print(f">>>>>> >>>>>> >>>>>>>>> total average OA: {oa_avg:.4f}", f"AA: {aa_avg:.4f}",
                           f"Kappa: {kappa_avg:.4f}\n\n")
+
